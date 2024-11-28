@@ -1,2 +1,2 @@
-# didepardaz
+# Didepardaz minor project
  

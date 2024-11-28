@@ -1,0 +1,29 @@
+services:
+  core:
+    container_name: core
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./core:/app
+    env_file:
+      - ./.env
+    depends_on:
+      - db_core
+
+  db_core:
+    container_name: postgres_didepardaz
+    image: postgres:16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=didepardaz
+    ports:
+      - "5432:5432"
+    restart: always
+
+volumes:
+  postgres_data:
