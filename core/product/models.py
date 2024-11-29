@@ -3,6 +3,9 @@ from django.core.validators import MinValueValidator
 
 
 class Brand(models.Model):
+    """
+    Stores a single brand entry.
+    """
     title = models.CharField(max_length=200)
     nationality = models.CharField(max_length=200)
 
@@ -11,6 +14,9 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
+    """
+    Stores a single product entry related to model:product.Brand.
+    """
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE, related_name='products')
     title = models.CharField(max_length=200, unique=True)
     price = models.PositiveIntegerField()

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Product Lists{% endblock %}
+
+{% block content %}
+    <h4>Filter products by their brands:</h4>
+    <p>
+       <form action="" method="get" class="col-md-3">
+            {{ form.as_p }}
+        <br>
+        <input type="submit" value="Apply" class="btn btn-primary ">
+        </form>
+<hr>
+    </p>
+    <h5>Products list:</h5>
+        {% for product in products %}
+            <ul>
+                <li>
+                    {{ product.title }}
+                </li>
+            </ul>
+        {% endfor %}
+
+{% endblock %}

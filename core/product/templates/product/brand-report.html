@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Brand Lists{% endblock %}
+
+{% block content %}
+    <h4>Brands with Korean nationality:</h4>
+<hr>
+    {% for brand in brands %}
+        <ul>
+            <li>
+                Name: {{ brand.title }}
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}

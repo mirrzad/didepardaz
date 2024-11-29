@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Brand Lists{% endblock %}
+
+{% block content %}
+    <h4>Products that nationality and manufacture are the same:</h4>
+    <hr>
+    {% for product in products %}
+        <ul>
+            <li>
+                {{ product.title }}
+            </li>
+        </ul>
+    {% endfor %}
+{% endblock %}
