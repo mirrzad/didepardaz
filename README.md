@@ -1,6 +1,3 @@
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
 Didepardaz minor project. 
 
 
