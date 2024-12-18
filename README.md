@@ -22,7 +22,7 @@ command bellow in the same directory of docker-compose.yml file.
 then run the following command to apply database migrations.
 
  ```sh
-  docker-compose exec backend sh -c "python manage.py migrate"
+  docker-compose exec core sh -c "python manage.py migrate"
   ```
 
 Now open the url below and you can reach the index page of the app.
