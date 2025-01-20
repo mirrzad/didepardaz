@@ -108,6 +108,7 @@ class ProductMadeInNationEqualReport(View):
 
 
 class A:
+    """fix bug2"""
     pass
 
 
