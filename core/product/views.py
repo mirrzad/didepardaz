@@ -108,6 +108,8 @@ class ProductMadeInNationEqualReport(View):
 
 
 class A:
-    """fix bug2 test test"""
+    """fix bug2 test test
+        test7878    
+    """
     pass
 
