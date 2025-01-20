@@ -106,11 +106,3 @@ class ProductMadeInNationEqualReport(View):
         products = Product.objects.filter(made_in=F('brand__nationality'))
         return render(request, self.template_name, {'products': products})
 
-
-class A:
-    """fix bug2 test test
-        test7878   213123123132132132121
-        jksahdljhslkjad
-    """
-    pass
-
